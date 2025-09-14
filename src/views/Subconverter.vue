@@ -435,6 +435,7 @@ const tgBotLink = process.env.VUE_APP_BOT_LINK
 const yglink = process.env.VUE_APP_YOUTUBE_LINK
 const bzlink = process.env.VUE_APP_BILIBILI_LINK
 const downld = 'http://' + window.location.host + '/download.html'
+const ghproxy = "https://ghfast.top"
 export default {
   data() {
     return {
@@ -893,7 +894,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://url.v1.mk" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://subconverter-latest-jh4i.onrender.com" : this.getUrlParam(),
         shortType: "https://v1.mk/short",
         remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini",
         excludeRemarks: "",
@@ -1081,7 +1082,7 @@ export default {
           this.form.insert;
       if (this.form.remoteConfig !== "") {
         this.customSubUrl +=
-            "&config=" + encodeURIComponent(this.form.remoteConfig);
+            "&config=" + encodeURIComponent(ghproxy+this.form.remoteConfig);
       }
       if (this.form.excludeRemarks !== "") {
         this.customSubUrl +=
@@ -1417,4 +1418,5 @@ export default {
   }
 };
 </script>
+
 
