@@ -435,7 +435,7 @@ const tgBotLink = process.env.VUE_APP_BOT_LINK
 const yglink = process.env.VUE_APP_YOUTUBE_LINK
 const bzlink = process.env.VUE_APP_BILIBILI_LINK
 const downld = 'http://' + window.location.host + '/download.html'
-const ghproxy = "https://ghfast.top"
+const ghproxy = "https://ghfast.top/"
 export default {
   data() {
     return {
