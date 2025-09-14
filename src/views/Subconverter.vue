@@ -475,7 +475,6 @@ export default {
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
-          "自建Render转换":"https://subconverter-latest-jh4i.onrender.com",
           "佬友周润发US后端":"https://subapi.zrfme.com",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
           "肥羊备用后端【vless reality+hy1+hy2】": "https://sub.d1.mk",
@@ -486,7 +485,6 @@ export default {
           "sub作者&lhie1提供": "https://api.dler.io",
         },
         backendOptions: [
-          {value: "https://subconverter-latest-jh4i.onrender.com"},
           {value: "https://subapi.zrfme.com"},
           {value: "https://url.v1.mk"},
           {value: "https://sub.d1.mk"},
@@ -894,7 +892,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://subconverter-latest-jh4i.onrender.com" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://subapi.zrfme.com" : this.getUrlParam(),
         shortType: "https://v1.mk/short",
         remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini",
         excludeRemarks: "",
@@ -1418,5 +1416,6 @@ export default {
   }
 };
 </script>
+
 
 
